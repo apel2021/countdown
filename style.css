@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@500;600&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(img/main-qimg-dc978780ac4f76fc44a517195933b7c8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: yellow;
+}
+.content h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.countdown{
+    display: flex;
+}
+
+.countdown>div{
+    width: 150px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 20px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.25);
+    font-size: 1.9rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.countdown>div>span{
+    font-size: .9rem;  
+}
+
+
+@media only screen and (max-width: 600px) {
+   .countdown{
+       display: flex;
+       flex-direction: column;
+   }
+   .content h1{
+       font-size: 30px;
+       
+   }
+   
+  }
